@@ -1,6 +1,6 @@
 package personajes;
 
-class Espadachin extends Personaje {
+public class Espadachin extends Personaje {
    private double resistencia;
    private boolean modoDefensivo;
 

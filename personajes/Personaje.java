@@ -6,7 +6,7 @@ import java.util.Random;
 import interfaces.IEquipable;
 import interfaces.ICombateable;
 
-abstract class Personaje implements ICombateable, IEquipable {
+public abstract class Personaje implements ICombateable, IEquipable {
    // Variables de diferentes tipos
    protected String nombre; // String
    protected int nivel; // int
@@ -82,10 +82,10 @@ abstract class Personaje implements ICombateable, IEquipable {
       return armaEquipada;
    }
 
-   // Método abstracto que deben implementar las subclases
+   // Metodo abstracto que deben implementar las subclases
    public abstract double atacar();
 
-   // Método para agregar objetos al inventario
+   // Metodo para agregar objetos al inventario
    public void agregarObjeto(String objeto) {
       inventario.add(objeto);
       System.out.println(nombre + " ha obtenido: " + objeto);

@@ -1,6 +1,6 @@
 package personajes;
 
-class Arquero extends Personaje {
+public class Arquero extends Personaje {
    private int flechas;
    private double precision;
 
