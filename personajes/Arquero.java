@@ -14,7 +14,7 @@ class Arquero extends Personaje {
    @Override
    public double atacar() {
       if (!estaVivo) {
-         System.out.println(nombre + " no puede atacar porque está muerto.");
+         System.out.println(nombre + " no puede atacar porque esta muerto.");
          return 0;
       }
 
@@ -24,7 +24,7 @@ class Arquero extends Personaje {
       }
 
       flechas--;
-      double danio = calcularDanioBase() * 1.2; // Bonus de daño para arqueros
+      double danio = calcularDanioBase() * 1.2;
 
       // Verificar precisión
       if (Math.random() > precision) {
@@ -50,13 +50,12 @@ class Arquero extends Personaje {
       }
 
       flechas -= objetivos;
-      double danio = calcularDanioBase() * 0.8; // Menos daño por flecha pero múltiple
-      System.out.println(nombre + " realiza disparo múltiple a " + objetivos + " objetivos causando "
+      double danio = calcularDanioBase() * 0.8;
+      System.out.println(nombre + " realiza disparo multiple a " + objetivos + " objetivos causando "
             + String.format("%.1f", danio) + " de daño cada uno.");
       return danio;
    }
 
-   // Getters específicos
    public int getFlechas() {
       return flechas;
    }
